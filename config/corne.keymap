@@ -15,6 +15,10 @@
     flavor = "balanced";
 };
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>;
+};
+
 &lt { tapping-term-ms = <400>; };
 
 / {
@@ -23,19 +27,19 @@
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <1 2 3>;
+            key-positions = <1 2>;
             bindings = <&kp ESCAPE>;
         };
 
         combo_bksp {
             timeout-ms = <50>;
-            key-positions = <10 9 8>;
+            key-positions = <10 9>;
             bindings = <&kp BACKSPACE>;
         };
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <13 14 15>;
+            key-positions = <13 14>;
         };
 
         combo_shift {
@@ -45,7 +49,7 @@
 
         combo_delete {
             bindings = <&kp DELETE>;
-            key-positions = <21 22 20>;
+            key-positions = <21 22>;
         };
 
         combo_rshift {
@@ -122,6 +126,11 @@
             bindings = <&mo 3>;
             key-positions = <36 37 38>;
         };
+
+        caps_words_combo {
+            bindings = <&caps_word>;
+            key-positions = <17 18>;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
@@ -129,7 +138,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        colemak_layer {
+        qwerty_layer {
             bindings = <
 &trans  &kp Q  &kp W  &kp E          &kp R         &kp T          &kp Y        &kp U                     &kp I              &kp O    &kp P     &trans
 &trans  &kp A  &kp S  &kp D          &kp F         &kp G          &kp H        &kp J                     &kp K              &kp L    &kp SEMI  &trans
@@ -149,9 +158,9 @@
 
         fun_layer {
             bindings = <
-&trans  &kp SPACE  &kp UP_ARROW     &kp ENTER       &kp PAGE_UP    &kp C_VOL_UP    &kp C_BRIGHTNESS_INC  &kp F1  &kp F4  &kp F7  &kp F10  &trans
-&trans  &kp LEFT   &kp DOWN         &kp RIGHT       &kp HOME       &kp C_MUTE      &kp C_PLAY_PAUSE      &kp F2  &kp F5  &kp F8  &kp F11  &trans
-&trans  &kp INS    &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAGE_DOWN  &kp C_VOL_DN    &kp C_BRIGHTNESS_DEC  &kp F3  &kp F6  &kp F9  &kp F12  &trans
+&trans  &kp SPACE  &kp UP_ARROW     &kp ENTER       &kp PAGE_UP    &kp C_VOL_UP    &kp C_BRIGHTNESS_INC  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+&trans  &kp LEFT   &kp DOWN         &kp RIGHT       &kp HOME       &kp C_MUTE      &kp C_PLAY_PAUSE      &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans  &kp INS    &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAGE_DOWN  &kp C_VOL_DN    &kp C_BRIGHTNESS_DEC  &kp F7  &kp F8  &kp F9  &kp F12  &trans
                                     &trans          &trans         &trans          &trans                &trans  &trans
             >;
         };
@@ -165,7 +174,7 @@
             >;
         };
 
-        qwerty_layer {
+        four_layer {
             bindings = <
 &trans  &kp Q  &kp W  &kp E          &kp R         &kp T          &kp Y        &kp U                     &kp I              &kp O    &kp P     &trans
 &trans  &kp A  &kp S  &kp D          &kp F         &kp G          &kp H        &kp J                     &kp K              &kp L    &kp SEMI  &trans

@@ -185,7 +185,7 @@
         numsym_layer {
             bindings = <
 &trans  &kp N1         &kp N2     &kp N3     &kp N4     &kp N5          &kp LESS_THAN     &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp SEMICOLON  &trans
-&trans  &kp NUMBER_6   &kp N7     &kp N8     &kp N9     &kp NUMBER_0    &kp LEFT          &kp DOWN           &kp UP           &kp RIGHT              &kp SQT        &trans
+&trans  &hml LEFT_SHIFT NUMBER_6   &hml LEFT_CONTROL N7     &hml LEFT_ALT N8     &kp N9     &kp NUMBER_0    &kp LEFT          &kp DOWN           &kp UP           &kp RIGHT              &kp SQT        &trans
 &trans  &kp BACKSLASH  &kp MINUS  &kp EQUAL  &kp SLASH  &kp ASTERISK    &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp GRAVE      &trans
                                   &trans     &trans     &trans          &trans            &trans             &trans
             >;

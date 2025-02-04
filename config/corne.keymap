@@ -13,6 +13,8 @@
 
 &lt { tapping-term-ms = <200>; };
 
+/ {
+
 behaviors {
     hml: homerow_mods_left {
         compatible = "zmk,behavior-hold-tap";
@@ -39,8 +41,6 @@ behaviors {
     };
 
 };
-
-/ {
     combos {
         compatible = "zmk,combos";
 
